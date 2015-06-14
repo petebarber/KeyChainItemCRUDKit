@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C1017E4F1B22E34E0007C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E4E1B22E34E0007C39D /* AppDelegate.swift */; };
-		C1017E511B22E34E0007C39D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E501B22E34E0007C39D /* ViewController.swift */; };
 		C1017E541B22E34E0007C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1017E521B22E34E0007C39D /* Main.storyboard */; };
 		C1017E561B22E34E0007C39D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1017E551B22E34E0007C39D /* Images.xcassets */; };
 		C1017E591B22E34E0007C39D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1017E571B22E34E0007C39D /* LaunchScreen.xib */; };
 		C1017E651B22E34E0007C39D /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E641B22E34E0007C39D /* ExampleTests.swift */; };
 		C1017EA11B22F3690007C39D /* KeyChainItemCRUDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1017E9C1B22F2F80007C39D /* KeyChainItemCRUDKit.framework */; };
+		C1F93B111B2DA20900FFE76D /* KeyChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F93B0F1B2DA20900FFE76D /* KeyChainViewController.swift */; };
+		C1F93B121B2DA20900FFE76D /* SomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F93B101B2DA20900FFE76D /* SomeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		C1017E491B22E34E0007C39D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1017E4D1B22E34E0007C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1017E4E1B22E34E0007C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1017E501B22E34E0007C39D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1017E531B22E34E0007C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1017E551B22E34E0007C39D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C1017E581B22E34E0007C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		C1017E631B22E34E0007C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1017E641B22E34E0007C39D /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		C1017E961B22F2F70007C39D /* KeyChainItemCRUDKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyChainItemCRUDKit.xcodeproj; path = ../KeyChainItemCRUDKit/KeyChainItemCRUDKit.xcodeproj; sourceTree = "<group>"; };
+		C1F93B0F1B2DA20900FFE76D /* KeyChainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainViewController.swift; sourceTree = "<group>"; };
+		C1F93B101B2DA20900FFE76D /* SomeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,9 @@
 		C1017E4B1B22E34E0007C39D /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C1F93B0F1B2DA20900FFE76D /* KeyChainViewController.swift */,
+				C1F93B101B2DA20900FFE76D /* SomeType.swift */,
 				C1017E4E1B22E34E0007C39D /* AppDelegate.swift */,
-				C1017E501B22E34E0007C39D /* ViewController.swift */,
 				C1017E521B22E34E0007C39D /* Main.storyboard */,
 				C1017E551B22E34E0007C39D /* Images.xcassets */,
 				C1017E571B22E34E0007C39D /* LaunchScreen.xib */,
@@ -270,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1017E511B22E34E0007C39D /* ViewController.swift in Sources */,
+				C1F93B111B2DA20900FFE76D /* KeyChainViewController.swift in Sources */,
+				C1F93B121B2DA20900FFE76D /* SomeType.swift in Sources */,
 				C1017E4F1B22E34E0007C39D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +478,7 @@
 				C1017E6A1B22E34E0007C39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1017E6B1B22E34E0007C39D /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				C1017E6D1B22E34E0007C39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,11 +1,3 @@
-//
-//  KeyChainItemCRUDKit.h
-//  KeyChainItemCRUDKit
-//
-//  Created by Pete on 06/06/2015.
-//  Copyright (c) 2015 KeyChainItemCRUDKit. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for KeyChainItemCRUDKit.

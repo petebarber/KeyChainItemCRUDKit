@@ -11,6 +11,7 @@
 		C1017E841B22F0C80007C39D /* KeyChainItemCRUDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1017E781B22F0C80007C39D /* KeyChainItemCRUDKit.framework */; };
 		C1017E8B1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E8A1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift */; };
 		C1017E951B22F0F20007C39D /* KeyChainItemCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E941B22F0F20007C39D /* KeyChainItemCRUD.swift */; };
+		C1F93B0C1B2DA0A000FFE76D /* KeyChainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F93B0B1B2DA0A000FFE76D /* KeyChainItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		C1017E891B22F0C80007C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1017E8A1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainItemCRUDKitTests.swift; sourceTree = "<group>"; };
 		C1017E941B22F0F20007C39D /* KeyChainItemCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainItemCRUD.swift; sourceTree = "<group>"; };
+		C1F93B0B1B2DA0A000FFE76D /* KeyChainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				C1017E7D1B22F0C80007C39D /* KeyChainItemCRUDKit.h */,
-				C1017E7B1B22F0C80007C39D /* Supporting Files */,
+				C1F93B0B1B2DA0A000FFE76D /* KeyChainItem.swift */,
 				C1017E941B22F0F20007C39D /* KeyChainItemCRUD.swift */,
+				C1017E7B1B22F0C80007C39D /* Supporting Files */,
 			);
 			path = KeyChainItemCRUDKit;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F93B0C1B2DA0A000FFE76D /* KeyChainItem.swift in Sources */,
 				C1017E951B22F0F20007C39D /* KeyChainItemCRUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +410,7 @@
 				C1017E901B22F0C80007C39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1017E911B22F0C80007C39D /* Build configuration list for PBXNativeTarget "KeyChainItemCRUDKitTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				C1017E931B22F0C80007C39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
