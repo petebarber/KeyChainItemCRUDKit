@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/petebarber/KeyChainItemCRUDKit"
-  s.license      = { :type => "MIT" }
+  s.license      = 'MIT'
 
   s.author             = { "pete" => "pete.barber@gmail.com" }
   s.social_media_url   = "https://twitter.com/foobarber"
