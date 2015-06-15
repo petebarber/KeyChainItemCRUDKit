@@ -12,6 +12,7 @@
 		C1017E8B1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E8A1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift */; };
 		C1017E951B22F0F20007C39D /* KeyChainItemCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1017E941B22F0F20007C39D /* KeyChainItemCRUD.swift */; };
 		C1F93B0C1B2DA0A000FFE76D /* KeyChainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F93B0B1B2DA0A000FFE76D /* KeyChainItem.swift */; };
+		C1F93B141B2F4DD900FFE76D /* KeyChainItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F93B131B2F4DD900FFE76D /* KeyChainItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		C1017E8A1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainItemCRUDKitTests.swift; sourceTree = "<group>"; };
 		C1017E941B22F0F20007C39D /* KeyChainItemCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainItemCRUD.swift; sourceTree = "<group>"; };
 		C1F93B0B1B2DA0A000FFE76D /* KeyChainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainItem.swift; sourceTree = "<group>"; };
+		C1F93B131B2F4DD900FFE76D /* KeyChainItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		C1017E871B22F0C80007C39D /* KeyChainItemCRUDKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1F93B131B2F4DD900FFE76D /* KeyChainItemTests.swift */,
 				C1017E8A1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift */,
 				C1017E881B22F0C80007C39D /* Supporting Files */,
 			);
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F93B141B2F4DD900FFE76D /* KeyChainItemTests.swift in Sources */,
 				C1017E8B1B22F0C80007C39D /* KeyChainItemCRUDKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

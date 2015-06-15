@@ -16,16 +16,22 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KeyChainItemCRUDKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Swift library to CRUD instances of NSData or objects implementing NSCoding into the iOS KeyChain."
 
   s.description  = <<-DESC
-                   A longer description of KeyChainItemCRUDKit in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+  
+  Having authenticated with a web service using OAuth2 and received the tokens I wanted to be able store them
+  sercurely. Whilst investigating secure storage on iOS I came across the ability to store small amounts of
+  data in the iOS Keychain. As the set of OAuth tokens is a couple of strings and number representing the
+  time to live of the token then this seemed like the ideal mechanism.
+  
+  However, the Keychain API isn't that simple nor succint to use and can only store a single piece of data. 
+  This single piece of data can be an instance of NSData this means arbitrary objects can be stored.
+  I created a small library that allowd the Creation, Reading, Updating and Deletion (CRUD) of instances of
+  NSData. Futher rather than having to create instances of NSData I provided a layer on top that manipulates
+  any object that supports NSCoding.
+                   
                    DESC
 
   s.homepage     = "https://github.com/petebarber/KeyChainItemCRUDKit"
@@ -55,7 +61,7 @@ Pod::Spec.new do |s|
   s.author             = { "pete" => "pete.barber@gmail.com" }
   # Or just: s.author    = "pete"
   # s.authors            = { "pete" => "pete.barber@gmail.com" }
-  # s.social_media_url   = "https://twitter.com/foobarber"
+  s.social_media_url   = "https://twitter.com/foobarber"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
