@@ -6,7 +6,7 @@ class TestType : NSObject, NSCoding
 {
 	let test: String
 	
-	required init(coder decoder: NSCoder)
+	required init?(coder decoder: NSCoder)
 	{
 		test = decoder.decodeObjectForKey("test") as! String
 	}

@@ -20,7 +20,7 @@ public class KeyChainItemCRUD
 			kSecAttrAccount as NSString : keyChainItemKey,
 			kSecValueData	as NSString : data] as NSDictionary
 		
-		var result: Unmanaged<AnyObject>?
+		var result: AnyObject?
 		
 		lastResult = SecItemAdd(item, &result)
 		
@@ -35,13 +35,13 @@ public class KeyChainItemCRUD
 			kSecAttrAccount 		as NSString	: keyChainItemKey,
 			kSecReturnData			as NSString	: kCFBooleanTrue] as NSDictionary
 		
-		var returnedData: Unmanaged<AnyObject>?
+		var returnedData: AnyObject?
 		
 		lastResult = SecItemCopyMatching(keyChainItemQuery, &returnedData)
 		
 		if lastResult == errSecSuccess
 		{
-			return returnedData!.takeRetainedValue() as? NSData
+			return returnedData! as? NSData
 		}
 		
 		return nil
@@ -55,9 +55,7 @@ public class KeyChainItemCRUD
 			kSecAttrAccount as NSString : keyChainItemKey] as NSDictionary
 		
 		let update = [kSecValueData	as NSString : data] as NSDictionary
-		
-		var result: Unmanaged<AnyObject>?
-		
+
 		lastResult = SecItemUpdate(query, update)
 		
 		return lastResult == errSecSuccess
