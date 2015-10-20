@@ -55,9 +55,7 @@ public class KeyChainItemCRUD
 			kSecAttrAccount as NSString : keyChainItemKey] as NSDictionary
 		
 		let update = [kSecValueData	as NSString : data] as NSDictionary
-		
-		var result: Unmanaged<AnyObject>?
-		
+
 		lastResult = SecItemUpdate(query, update)
 		
 		return lastResult == errSecSuccess
