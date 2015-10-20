@@ -194,6 +194,7 @@
 		C1017E411B22E34E0007C39D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = KeyChainItemCRUDKit;
 				TargetAttributes = {

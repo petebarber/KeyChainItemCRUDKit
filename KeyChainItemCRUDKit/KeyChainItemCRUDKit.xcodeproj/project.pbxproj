@@ -167,6 +167,8 @@
 		C1017E6F1B22F0C80007C39D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = KeyChainItemCRUDKit;
 				TargetAttributes = {
