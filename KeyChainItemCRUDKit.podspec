@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KeyChainItemCRUDKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Swift library to CRUD instances of NSData or objects implementing NSCoding into the iOS KeyChain."
   s.description  = <<-DESC
   
@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
   I created a small library that allowd the Creation, Reading, Updating and Deletion (CRUD) of instances of
   NSData. Futher rather than having to create instances of NSData I provided a layer on top that manipulates
   any object that supports NSCoding.
+
+  Version 0.0.3 is Swift 2.1. The previous version is pre-2.0.
                    
                    DESC
 
@@ -25,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/petebarber/KeyChainItemCRUDKit.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/petebarber/KeyChainItemCRUDKit.git", :tag => "0.0.3" }
 
   s.source_files  = "KeyChainItemCRUDKit/KeyChainItemCRUDKit/*.swift"
   s.exclude_files = "Classes/Exclude"
