@@ -18,7 +18,7 @@ class KeyChainViewController: UIViewController
 		}
 	}
 	
-	required init(coder aDecoder: NSCoder)
+	required init?(coder aDecoder: NSCoder)
 	{
 		self.keyChainItem = KeyChainItem(bundleId: bundleId, keyChainItemKey: KEYCHAIN_ITEM_KEY)
 		super.init(coder: aDecoder)
@@ -36,9 +36,14 @@ class KeyChainViewController: UIViewController
 	
 	@IBAction func didEndOnExit(sender: UITextField)
 	{
-		println("didEndOnExit")
+		print("didEndOnExit")
 		
-		someData.textString1 = sender.text
+		guard let text = sender.text else
+		{
+			return
+		}
+		
+		someData.textString1 = text
 	}
 	
 	@IBAction func clear(sender: AnyObject)
@@ -51,7 +56,7 @@ class KeyChainViewController: UIViewController
 		if let someData = keyChainItem.load() as SomeType?
 		{
 			self.someData = someData
-			println("load, someData:\(self.someData.textString1)")
+			print("load, someData:\(self.someData.textString1)")
 		}
 
 		updateStatus("load")
@@ -59,7 +64,7 @@ class KeyChainViewController: UIViewController
 	
 	@IBAction func save(sender: AnyObject)
 	{
-		println("save, someData:\(someData.textString1)")
+		print("save, someData:\(someData.textString1)")
 		
 		keyChainItem.save(someData)
 		updateStatus("save")
